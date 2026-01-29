@@ -1,9 +1,12 @@
 # Juego de Gato (Tic-Tac-Toe)
 
-Proyecto simple en Python que incluye:
+Proyecto convertido a sitio HTML estático:
 
 - Una versión CLI (consola) del juego.
 - Una versión web con Flask que permite jugar en el navegador y usar el botón "Imprimir" del navegador para obtener una copia en papel/PDF.
+- Una versión totalmente estática en HTML/CSS/JS en `static_site`.
+
+La carpeta `static_site` contiene `index.html`, `style.css` y `script.js`. Abre `static_site/index.html` en tu navegador para jugar o sirve la carpeta con cualquier servidor estático.
 
 Requisitos
 - Python 3.8+
@@ -27,4 +30,13 @@ flask run
 # Abrir http://127.0.0.1:5000
 ```
 
-La página web incluye un botón "Imprimir" que llama a la función de impresión del navegador.
+Instrucciones rápidas:
+
+- Abrir localmente: haz doble clic en `tic_tac_toe/static_site/index.html` o abre en el navegador.
+- Servir por HTTP: usa un servidor estático, por ejemplo con Python 3:
+
+```powershell
+cd "tic_tac_toe/static_site"
+python -m http.server 8000
+# luego abrir http://127.0.0.1:8000
+```

@@ -1,0 +1,11 @@
+body{ font-family: Arial, Helvetica, sans-serif; padding:20px }
+main{ max-width:420px; margin:0 auto }
+#board{ display:grid; grid-template-columns: repeat(3,120px); grid-gap:5px; margin:20px 0 }
+.cell{ width:120px; height:120px; background:#f7f7f7; display:flex; align-items:center; justify-content:center; font-size:48px; cursor:pointer; border:2px solid #333 }
+.controls{ margin-top:10px; text-align:center }
+button{ padding:8px 14px; margin-right:8px }
+
+@media print{
+  button, .controls { display:none }
+  body { margin: 0 }
+}

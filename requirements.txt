@@ -1,1 +1,2 @@
-Flask>=2.0
+# No Python dependencies required for the static HTML version
+
